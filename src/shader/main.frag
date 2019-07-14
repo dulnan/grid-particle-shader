@@ -91,8 +91,6 @@ vec3 particles(vec2 st, float scale, int index) {
   /* Move every column of the grid at a slightly different speed, while making */
   /* sure no two columns that are next to each other have the same speed. */
   uv.y -= ((abs(sin(floor(uv.x)) + offset) + offset) * (u_flow / 1.)) / offset;
-  /* uv.y -= floor(f_uv.x + u_flow * 30.); */
-  /* uv.y -= abs(sin(cos(floor(uv.x)))) * (u_flow / 2.); */
 
   /* Calculcate the grid and cells once again as they've been shifted previously. */
   vec2 cell_id = floor(uv);
