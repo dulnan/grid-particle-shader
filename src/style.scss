@@ -1,0 +1,64 @@
+#canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.scroll-container {
+  height: 500vh;
+  position: relative;
+  z-index: 10;
+  display: flex;
+}
+
+#code {
+  display: block;
+  color: white;
+  margin: 0 auto;
+  font-family: monospace;
+  font-size: 16px;
+  padding: 2rem;
+}
+
+.hljs {
+  background: transparent;
+}
+
+#debug {
+  display: flex;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  font-family: monospace;
+  padding: 0.5rem;
+  background: #282828;
+
+  > div {
+    flex: 1;
+  }
+
+  .label {
+    font-weight: bold;
+    margin-bottom: 4px;
+    color: #928374;
+  }
+}
+
+.value--checkbox {
+  display: flex;
+  align-items: center;
+
+  input,
+  label {
+    cursor: pointer;
+  }
+
+  label {
+    margin-left: 0.25rem;
+  }
+}
